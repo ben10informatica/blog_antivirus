@@ -1,0 +1,183 @@
+:root {
+    --primary-color: #20ebe0;
+    --secondary-color: #3958be;
+    --bg-color: #1a629c;
+    --text-color: #fdffff;
+    --text-secondary: #eafcff;
+    --border-radius: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(98, 119, 88, 0.1);
+}
+
+body  {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 16px;
+    background-color: #0a2342; /* azul escuro */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.antivr1 {
+    max-width: 380px;
+    margin: 16px auto;
+    padding: 18px 16px;
+    background: rgba(26, 98, 156, 0.85);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 32px 0 rgba(60, 219, 211, 0.25);
+    position: relative;
+    backdrop-filter: blur(4px);
+}
+
+.antivr1 h1 {
+    color: #fdffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px #20ebe0;
+}
+
+.antivr1 p {
+    color: #eafcff;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 8px rgba(0, 255, 242, 0.15);
+    font-size: 1.08em;
+    border-radius: 8px;
+    background: rgba(60, 219, 211, 0.08);
+    padding: 8px 0;
+}
+
+.antivr-links {
+    max-width: 380px;
+    margin: 16px auto;
+    text-align: center;
+    background: rgba(26, 98, 156, 0.85);
+    padding: 16px 12px 24px 12px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 8px 32px 0 rgba(4, 255, 242, 0.18);
+    position: relative;
+    backdrop-filter: blur(4px);
+}
+
+.antivr-links h1 {
+    color: #fdffff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px #04fff2;
+}
+
+.antivr-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.antivr-links li {
+    margin: 10px 0;
+    font-size: 1.05em;
+}
+
+.antivr-links a {
+    color: #04fff2;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 7px 18px;
+    border-radius: 8px;
+    background: rgba(4, 255, 242, 0.08);
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(4, 255, 242, 0.12);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+    border: 1px solid #04fff233;
+}
+
+.antivr-links a:hover {
+    background: #04fff2;
+    color: #1a629c;
+    box-shadow: 0 4px 16px #04fff255;
+    transform: scale(1.07);
+}
+
+/* Estrelas decorativas no topo do .antivr-links */
+.antivr-links::before {
+    content: '';
+    position: absolute;
+    top: 8px; left: 18px;
+    width: 2px; height: 2px;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+
+.bg-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    pointer-events: none;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    z-index: -1;
+}
+
+/* Media query para mobile */
+@media (max-width: 600px) {
+    body {
+        max-width: 100%;
+        margin: 0;
+        padding: 8px;
+    }
+    .antivr1, .antivr-links {
+        max-width: 100%;
+        margin: 8px 0;
+        padding: 12px 8px;
+    }
+    .antivr-links h1, .antivr1 h1 {
+        font-size: 1.2em;
+    }
+    .antivr-links a {
+        display: block;
+        margin: 8px 0;
+        padding: 10px 12px;
+    }
+}
+
+.bg-stars::before {
+    content: '';
+    position: absolute;
+    top: -350px; left: 0px;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    box-shadow:
+        1px 3px white,
+        6px 2px rgb(255, 253, 253),
+        1px 4px white,
+        2px 2px white,
+        3px 5px white,
+        4px 1px white,
+        5px 3px white,
+        5px 1px white;
+}
+
+
+

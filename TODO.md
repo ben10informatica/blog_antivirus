@@ -1,0 +1,8 @@
+- [x] Editar main.html: Adicionar meta description, mudar lang para pt-br, substituir links placeholders por links reais de antivírus.
+- [x] Editar style.css: Adicionar variáveis CSS, trocar imagem de fundo para local, padronizar border-radius, adicionar media query para mobile.
+- [x] Testar abertura no navegador para verificar melhorias.
+- [x] Criar avira.html: Página dedicada ao Avira com instalação, recursos, vantagens e desvantagens.
+- [x] Criar avg.html: Página dedicada ao AVG com instalação, recursos, vantagens e desvantagens.
+- [x] Editar main.html: Adicionar links para avira.html e avg.html na lista de links.
+- [x] Editar main.html: Alterar links de Bitdefender e Malwarebytes para páginas locais.
+- [x] Adicionar links de instalação no final de todas as páginas de antivírus.
